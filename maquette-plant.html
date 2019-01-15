@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Maquette Plant a billion</title>
+  <link rel="stylesheet" type="text/css" href="sources/styles/style-annexe.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href=""><img src="" alt=""></a>
+		<div>
+			<a class="menu" href="#desktop"> La maquette desktop</a>
+			<a class="menu" href="#mobile"> La maquette mobile</a>
+		</div>
+	</header>
+	<main>
+		<h1> Projet d'étude Plant a billion </h1>
+		<strong> Maquette UX /UI </strong>
+		<a href="index.html#project"><img class="previous" src="sources/images/back.png" alt="bouton de retour à la page précédente"> </a>
+		<section class="smoothScroll" id="brief">
+			<h2> Le brief client</h2>
+				<p>
+				Nous désirons développer notre visibilité, et refondre notre site internet dédié à l'opération Plant a Billion (https://www.plantabillion.org/). Le site actuel n'est pas assez dynamique, explicatif ni incitatif à l'action, aux dons, et bien que disposant de graphisme de qualité, ne met pas la thématique assez en valeur et ne l'explicite pas suffisemment. 
+				<ul>Nous désirons ainsi une refonte réfléchi de notre site en une seule page qui fusionnerait toutes celles présentes :
+
+				<li> page d'accueil </li>
+
+				<li> les 3 pages localisations </li>
+
+				<li> la page partenaire </li>
+				</ul>
+				Nous souhaitons cependant que la nouvelle mouture soit réfléchie en terme ergonomique et non pas juste un "empilement" de tous les précédents contenus. Sentez-vous libre d'utiliser animations, contenus avec apparition animé, etc... afin de rendre la refonte à la fois plus ergonomique, plus aérée, tout en ne faisant pas l'impasse sur la quantité d'information, mais plutôt sa juste distribution, tout en remplissant les impératifs spécifiés plus haut.
+				</p>
+		</section>
+		<h3 id="desktop"> La maquette desktop :</h3>
+		<img src="sources/images/maquette-pc-plant.jpg">
+		<img src="sources/images/maquette-pc-plant-popup.jpg">
+		<h3 id="mobile">L'application </h3>
+				<p>
+				<ul>Nous aimerions une application qui permette aux visiteurs de faire une donation au programme Plant a billion : 
+				<li> une interface visuellement engageante et intuitive tout en étant élégante et travaillée </li>
+				<li> une visualisation du don, et des conséquences de celui-ci, afin que l'usager puisse voir de façon concrète et interactive les actions qui seront menées et où elle le seront </li>
+				<li> la possibilité, une fois le don effectué, de partager l'action ensuite sur les réseaux sociaux </li>
+				</ul>
+				</p>
+		<img src="sources/images/connexion.jpg">
+		<img src="sources/images/selection.jpg">
+		<img src="sources/images/explication.jpg">
+		<img src="sources/images/previsualisation.jpg">
+		<img src="sources/images/donation.jpg">
+		<img src="sources/images/partage.jpg">
+
+		<a class="smoothScroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
+
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

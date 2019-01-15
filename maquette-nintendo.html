@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Maquette Nintendo Labo</title>
+  <link rel="stylesheet" type="text/css" href="sources/styles/style-annexe.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href=""><img src="" alt=""></a>
+		<div>
+			<a class="menu" href="#desktop"> La maquette desktop</a>
+			<a class="menu" href="#mobile"> La maquette mobile</a>
+		</div>
+	</header>
+	<main>
+		<h1> Projet d'étude Nintendo Labo </h1>
+		<strong> Maquette UX /UI </strong>
+		<a href="index.html#project"><img class="previous" src="sources/images/back.png" alt="bouton de retour à la page précédente"></a>
+		<section class="smoothScroll" id="brief">
+			<h2> Le brief client</h2>
+				<p>
+				Nous avons confiance en notre produit, mais notre site (https://labo.nintendo.com) n'est pas assez proche des cibles. Nous aimerions une refonte de notre site, avec un aspect plus humain, plus chaleureux, et plus convainquant concernant la révolution d'utilisation des objets qu'il propose, sa facilité d'utilisation et de mise en place, et les potentielles applications. Nous aimerions à cet effet un one page mutualisant les contenus des pages d'accueil et des autres pages, avec une identité moins austère, mais de façon cohérente et réfléchie, et complétées par vos propres idées.
+				</p>
+
+				
+		</section>
+		<h3 id="desktop"> La maquette desktop :</h3>
+		<img src="sources/images/pc.png">
+		<h3 id="mobile">L'application </h3>
+				<p>
+				<ul>Nous aimerions une application qui permet au parent d'assister son enfant lors de son utilisation du Nintendo Labo, en montrant : 
+				<li> des pistes et indications pour l'aider à monter son kit </li>
+				<li> une visualisation de la progression de l'enfant, afin que le parent puisse visualiser éventuellement si l'enfant est bloqué à une étape </li>
+				<li> un compteur de jeux afin de visualiser le temps passé sur chaque application, mais également global </li>
+				<li> des informations, vidéos, tutoriels, documentaires permettant à l'enfant de raccorder ce qui a été appris avec des activités réelles proposées, vous serez force de proposition afin de parfaire cette expérience </li>
+				<li> etc...</li>
+				</ul>
+				</p>
+		<img src="sources/images/connexion.png">
+		<img src="sources/images/accueil.png">
+		<img src="sources/images/progression.png">
+		<img src="sources/images/distance.png">
+		<img src="sources/images/jeux.png">
+		<img src="sources/images/peche.png">
+		<img src="sources/images/approfondir.png">
+		<img src="sources/images/exemple.png">
+
+		<a class="smoothScroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>

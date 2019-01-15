@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Maquette Darwin</title>
+  <link rel="stylesheet" type="text/css" href="sources/styles/style-annexe.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+		<h1> Projet d'étude Darwin </h1>
+		
+		<a href="index.html#project"><img class="previous" src="sources/images/back.png" alt="bouton de retour à la page précédente"> </a>
+		<section class="smoothScroll" id="brief">
+			<h2> Le brief client</h2>
+				<p>
+				Notre site est difficile à naviguer et prendre en main, de trop nombreuses images et peu d’explicitations et de nivellement de l'information rendent le tout très confus.
+				<ul> Nous désirons donc une refonte tirant parti de l'existant pour :
+					<li>une navigation plus claire</li>
+					<li>un nivellement de l'information plus pertinent</li>
+					<li>une présentation plus didactique de notre éco-quartier</li>
+				</ul>
+				</p>
+		</section>
+		<h3 id="desktop"> La maquette desktop :</h3>
+		<img src="sources/images/pc-darwin.jpg">
+		<h3 id="mobile">L'application </h3>
+		<section>
+				<p>
+				Nous aimerions une application qui permet aux gens d'accéder à un plan interactif ainsi qu'un agenda/actus des événements à venir à Darwin. Une présentation des lieux en complément du plan est nécessaire.
+				</p>
+		</section>
+		<img src="sources/images/load.jpg">
+		<img src="sources/images/map.jpg">
+		<img src="sources/images/filtre.jpg">
+		<img src="sources/images/map1.jpg">
+		<img src="sources/images/agenda.jpg">
+		<img src="sources/images/evenement.jpg">
+
+		<a class="smoothScroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
