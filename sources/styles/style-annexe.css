@@ -67,8 +67,9 @@ h3 {
 }
 
 p {
-	margin: 0 40px;
+	margin: 5px 40px;
 	max-width: 80%;
+
 }
 
 section {
@@ -110,4 +111,8 @@ strong {
 	font-style: italic;
 	display: block;
 	margin: 7px 0 0;
+}
+
+video {
+	margin-top: 40px;
 }

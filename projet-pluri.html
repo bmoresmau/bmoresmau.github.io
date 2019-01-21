@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mini-site Le temps du oeuvre</title>
+  <link rel="stylesheet" type="text/css" href="sources/styles/style-annexe.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href=""><img src="" alt=""></a>
+		<div>
+			<a class="menu" href="#desktop"> La scénographie</a>
+			<a class="menu" href="#mobile"> Le mini-site</a>
+		</div>
+	</header>
+	<main>
+		<h1> Projet Pluridisciplinaire </h1>
+		
+		<a href="index.html#project"><img class="previous" src="sources/images/back.png" alt="bouton de retour à la page précédente"> </a>
+		<section class="smoothScroll" id="brief">
+				<h3 id="desktop"> La scénographie</h3>
+				<section>
+				<p> Lors de la semaine de projet pluridisciplinaire, nous avions pour but de concevoir en binôme un mini-site qui aurait pour but de donner envie aux visiteurs du site de se déplacer à la scénographie que nous avons imaginés pour une oeuvre. </p>
+				<p> Nous avons choisis l'oeuvre Message III de Toshiko Tanaka et nous avons imaginé cette scénographie. (photos ci-dessous) </p>
+				<img src="sources/images/tunnel.jpg" alt="Image tunnel scénographie">
+				<img src="sources/images/sol.jpg" alt="Image du sol scénographie">
+				</section>
+				<h3 id="mobile">Le mini-site </h3>
+				<section>
+				<p> Nous avons conçu un mini-site qui permet d'entrer dans l'univers de l'oeuvre afin d'inciter les visiteurs du site à se rendre à l'exposition. Nous avons montré subtilement certains éléments de l'oeuvre mais le visiteur ne s'en rendra compte qu'une fois avoir vu l'oeuvre réelle. </p> 
+				<p> Les animations présentes sur le site ont pour but de commencer à comprendre les enjeux de l'oeuvre. </p>
+				<p>Ci-dessous la navigation du mini-site en vidéo </p>
+				<video controls width="90%" loop> 
+					<source src="projet_pluri.mp4"/>
+				</video>
+			</section>
+		</section>
+		<a class="smoothScroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>

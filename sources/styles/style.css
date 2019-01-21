@@ -93,7 +93,7 @@ nav > a {
 }
 
 header {
-	background-color: #006699;
+	background-color: #13293d;
 	display: block;
 	position: fixed;
 	z-index: 5;
@@ -111,12 +111,12 @@ header {
 
 .lien {
 	transition: 0.3s ease;
-	background: #006699;
+	background: #13293d;
 	color: #ffffff;
 	font-size: 15px;
 	text-decoration: none;
-	border-top: 3px solid #006699;
-	border-bottom: 3px solid #006699;
+	border-top: 3px solid #13293d;
+	border-bottom: 3px solid #13293d;
 	padding: 10px 0;
   	margin: 0 10px;
   	height: 5vh;
@@ -255,285 +255,22 @@ header {
 	margin: 15px 0 0;
 }
 
-/* ------------------------------ Compétences ------------------------- */
-/* 
-// Responsive My Skills Box Widget
-// Made with ❤ by @Pawan_Mall
-// http://www.pawanmall.net 
-*/
-
-/*#SkillBox {
-    font-size: 20px;
-    font-family: 'Indie Flower', cursive;
-    width: 95%;
-    height: auto;
-    margin: 40px auto;
-    background-color: #fff;
-    //border: 1px solid #cdcdcd;
-    padding: 10px;
-    border-radius:20px;
-    -o-border-radius:20px;
-    -webkit-border-radius:20px;
-    -ms-border-radius:20px;
-    -moz-border-radius:20px;  
-}
-#SkillBox img {
-    width: 20%;
-    height: 10%;
-    margin: auto 35%;
-    padding: 10px;
-}
-.SkillBar {
-    width: 80%;
-    height: 50px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 20px auto;
-}
-#Skill-HTML {
-    width: 80%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
-    height: 50px;
-    position: absolute;
-    background-color: #ea8564;
-}
-@keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-webkit-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-moz-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-o-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}#Skill-CSS {
-    animation: Animate-CSS 5s;
-    -webkit-animation: Animate-CSS 5s;
-    -moz-animation: Animate-CSS 5s;
-    -o-animation: Animate-CSS 5s;
-    width: 75%;
-    height: 50px;
-    position: absolute;
-    background-color: #55a69f;
-}
-@keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 75%}
-}@-webkit-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 75%}
-}@-moz-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 75%}
-}@-o-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 75%}
-}#Skill-jQuery {
-    animation: Animate-jQuery 5s;
-    -webkit-animation: Animate-jQuery 5s;
-    -moz-animation: Animate-jQuery 5s;
-    -o-animation: Animate-jQuery 5s;
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    background-color: #99856d;
-}
-@keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-webkit-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-moz-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-o-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}#Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 40%;
-    height: 50px;
-    position: absolute;
-    background-color: #c44e45;
-}
-@keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-moz-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-o-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}#Skill-PHP {
-    animation: Animate-PHP 4s;
-    -webkit-animation: Animate-PHP 4s;
-    -moz-animation: Animate-PHP 4s;
-    -o-animation: Animate-PHP 4s;
-    width: 40%;
-    height: 50px;
-    position: absolute;
-    background-color: #5A69A6;
-}
-@keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-moz-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-o-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}#Skill-SQL {
-    animation: Animate-SQL 4s;
-    -webkit-animation: Animate-SQL 4s;
-    -moz-animation: Animate-SQL 4s;
-    -o-animation: Animate-SQL 4s;
-    width: 30%;
-    height: 50px;
-    position: absolute;
-    background-color: #23b1db;
-}
-@keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-webkit-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-moz-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-o-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}.Skill-Area {
-    z-index: 1;
-    float: left;
-    //position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
-    text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-.PercentText {
-    z-index: 3;
-    position: relative;
-    padding-right: 15px;
-    margin-top: 15px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-
-#skills {
-	margin-bottom: 40px;
-}
-
-#skills > h2 {
-	margin-bottom: 40px;
-}
-*/
 /* ------------------------------ Projets ------------------------- */
+
+#project > h2 {
+	color: black;
+}
 
 #project > p {
 	text-align: center;
 	margin: 40px 0px;
+	color: black;
 }
 
 #project {
-	background-color: #006699;
+	/*background-color: #D7D6D6;*/
+	background-image: url("../images/mer.jpg");
+	background-size:100% 100%;
 	color: white;
 	margin-bottom: 0px; 
 	padding-bottom: 10px;
@@ -542,6 +279,7 @@ to {
 .col-md-6 > a > .back {
 	width: 250px;
 	height: 190px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .col-md-6 > a > .back > .hover {
@@ -563,6 +301,8 @@ to {
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
+	width: 20px;
+	display: block;
 }
 
 .col-md-6 > a > .back > .hover > h3 {
@@ -780,10 +520,6 @@ footer {
 	font-size: 12px;
 	margin: 12px 0 0;
 }
-/*  #Skill-Area { 
-  	font-size: 15px;
-  }*/
-
   .socialmedia {
 	position: relative;
 	left: 50%;
