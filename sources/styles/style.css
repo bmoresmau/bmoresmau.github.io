@@ -51,6 +51,12 @@ table {
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 section {
@@ -60,7 +66,8 @@ section {
 }
 
 h2 {
-	margin-bottom: 20px;
+
+	margin: 20px 0px;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Patua One', cursive;
@@ -73,6 +80,7 @@ a {
 a:hover {
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 /* ------------------------------ Section header -------------------- */
 nav {
@@ -120,6 +128,7 @@ header {
 	padding: 10px 0;
   	margin: 0 10px;
   	height: 5vh;
+  	cursor: pointer;
 }
 
 .lien:hover {
@@ -211,11 +220,12 @@ header {
 	width: 40vw;
 }
 
-#about > img {
+#about > .about-image > img {
 	position: absolute;
 	top: 15%;
 	left: 20%;
 	height: 200px;
+	overflow: hidden;
 }
 
 .roundedImage{
@@ -243,6 +253,10 @@ header {
 	flex-direction: column;
 }
 
+.skills > div:hover {
+	transform: translateY(-10%);
+}
+
 .skills > div > h3 {
 	font-weight: bold;
 	font-size: 20px;
@@ -268,7 +282,6 @@ header {
 }
 
 #project {
-	/*background-color: #D7D6D6;*/
 	background-image: url("../images/mer.jpg");
 	background-size:100% 100%;
 	color: white;
@@ -433,6 +446,8 @@ header {
 	width: 30px;
 }
 
+
+
 /* ------------------------------ Footer ------------------------- */
 
 footer {
@@ -468,17 +483,17 @@ footer {
   #about {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	height: 120vh;
 	display: block;
 }
 
   #about > section {
   	position: relative;
-  	padding-top: 28vh;
+  	padding-top: 35vh;
   }
 
   #about > section > p {
-	margin: 0 auto;
+	margin: 5px auto;
 	left: auto;
 	top: auto;
 	position: relative;
@@ -486,9 +501,9 @@ footer {
 	}
 
 	
-  #about > img {
+  #about > .about-image > img {
   	left: 50%;
-  	top: auto;
+  	top: 13%;
   	transform: translateX(-50%);
   	position: absolute;
   	height: 160px;

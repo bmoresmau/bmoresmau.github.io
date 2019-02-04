@@ -5,20 +5,22 @@
   <title>Maquette Darwin</title>
   <link rel="stylesheet" type="text/css" href="sources/styles/style-annexe.css">
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="sources/js/jquery.anchorScroll.min.js"></script>
 </head>
 <body>
 	<header>
 		<a href=""><img src="" alt=""></a>
 		<div>
-			<a class="menu" href="#desktop"> La maquette desktop</a>
-			<a class="menu" href="#mobile"> La maquette mobile</a>
+			<a class="menu anchor-scroll" href="#desktop"> La maquette desktop</a>
+			<a class="menu anchor-scroll" href="#mobile"> La maquette mobile</a>
 		</div>
 	</header>
 	<main>
 		<h1> Projet d'étude Darwin </h1>
 		
 		<a href="index.html#project"><img class="previous" src="sources/images/back.png" alt="bouton de retour à la page précédente"> </a>
-		<section class="smoothScroll" id="brief">
+		<section class="anchor-scroll" id="brief">
 			<h2> Le brief client</h2>
 				<p>
 				Notre site est difficile à naviguer et prendre en main, de trop nombreuses images et peu d’explicitations et de nivellement de l'information rendent le tout très confus.
@@ -44,28 +46,9 @@
 		<img src="sources/images/agenda.jpg">
 		<img src="sources/images/evenement.jpg">
 
-		<a class="smoothScroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
+		<a class="anchor-scroll" href="#brief"><img src="sources/images/up-black.png" alt="icone remontée"></a>
 	</main>
+	<script src="./sources/js/script.js" type="text/javascript"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<script>
-	$(function() {
-  // This will select everything with the class smoothScroll
-  // This should prevent problems with carousel, scrollspy, etc...
-  $('.smoothScroll').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 800); // The number here represents the speed of the scroll in milliseconds
-        return false;
-      }
-    }
-  });
-});
-</script>
 </body>
 </html>
