@@ -255,6 +255,7 @@ header {
 
 .skills > div:hover {
 	transform: translateY(-10%);
+	transition: .3s ease-in-out;
 }
 
 .skills > div > h3 {
