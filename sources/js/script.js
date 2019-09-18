@@ -50,7 +50,7 @@ $(document).ready(function(){
         lastScrollTop = st;
     }
 
-    window.sr = ScrollReveal({ reset: true });
+    window.sr = ScrollReveal({ reset: false });
 
     sr.reveal('.about-image', { delay: 400 });
     sr.reveal('.presentation', { delay: 700 });
